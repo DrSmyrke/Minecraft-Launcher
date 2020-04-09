@@ -1,0 +1,4 @@
+bin
+build
+build-*
+*.pro.user
