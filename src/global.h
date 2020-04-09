@@ -6,6 +6,7 @@
 struct Config{
 	QString version;
 	QString login;
+	QString javaPath;
 };
 
 namespace app {

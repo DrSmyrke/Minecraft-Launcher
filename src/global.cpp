@@ -29,6 +29,7 @@ namespace app {
 		QSettings settings( "config.ini", QSettings::IniFormat );
 
 		app::conf.login = settings.value("MAIN/login",app::conf.login).toString();
+		app::conf.javaPath = settings.value("MAIN/javaPath",app::conf.javaPath).toString();
 	}
 
 	void saveSettings()
@@ -37,6 +38,7 @@ namespace app {
 
 		settings.clear();
 		settings.setValue("MAIN/login",app::conf.login);
+		settings.setValue("MAIN/javaPath",app::conf.javaPath);
 	}
 
 

@@ -51,6 +51,3 @@ exists(./gitversion.pri):include(./gitversion.pri)
 
 RESOURCES += \
     resources.qrc
-
-DISTFILES += \
-    myLibs.pri

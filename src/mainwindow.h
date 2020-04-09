@@ -3,7 +3,6 @@
 
 #include <QMainWindow>
 #include "global.h"
-#include "myfunctions.h"
 
 namespace Ui {
 class MainWindow;
@@ -18,8 +17,11 @@ public:
 	~MainWindow();
 private slots:
 	void slot_start();
+	void slot_javaSelect();
 private:
 	Ui::MainWindow *ui;
+
+	void scanDir(const QString &path, QStringList &list);
 };
 
 #endif // MAINWINDOW_H
